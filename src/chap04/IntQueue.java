@@ -46,6 +46,16 @@ public class IntQueue {
 		return x;
 	}
 	
+	//큐에 데이터를 디큐
+	public int deque() throws EmptyIntQueueException{
+		if(num <= 0)
+			throw new EmptyIntQueueException(); //큐가 비어있음
+		int x = que[front++]; 
+		num--; 
+		if(front == max)
+			front = 0; 
+		return x; 
+	}
 	
 	
 	
