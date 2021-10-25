@@ -1,8 +1,9 @@
 package chap02;
 import java.util.Scanner;
+//두 배열이 같은가를 판단
 
 public class ArrayEqual {
-	
+	//두 배열 a,b의 모든 요소가 같은가?
 	static boolean equals(int[] a, int[] b) {
 		
 		if(a.length != b.length)
@@ -21,18 +22,18 @@ public class ArrayEqual {
 		System.out.print("배열 a의 요솟수 : ");
 		int na = stdIn.nextInt(); 
 		
-		int[] a = new int[na]; 
+		int[] a = new int[na];  //요솟수가 na인 배열 
 		
 		for(int i=0; i<na; i++) {
 			System.out.print("a[" + i + "] : " );
 
-		a[i] = stdIn.nextInt(); 
+		a[i] = stdIn.nextInt();
 	}
 		
 		System.out.print("배열 b의 요솟수 : ");
 		int nb = stdIn.nextInt(); 
 		
-		int[] b = new int[nb]; 
+		int[] b = new int[nb];  //요솟수가 nb인 배열 
 		
 		for(int i =0; i<nb; i++) {
 			System.out.print("b[" + i + "] : " );
